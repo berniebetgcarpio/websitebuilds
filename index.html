@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Lorem Ipsum</title>
+    <!-- Replaced Tailwind with custom CSS including breakpoints for mobile, tablet, and desktop -->
+    <style>
+        :root {
+            --bg-color: #f9fafb;
+            --text-color: #111827;
+            --container-bg: #ffffff;
+            --primary-color: #2563eb;
+            --border-color: #e5e7eb;
+            --font-main: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Mobile First Styles */
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: var(--container-bg);
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 1.875rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+            color: #374151;
+        }
+
+        /* Tablet Breakpoint (768px) */
+        @media (min-width: 768px) {
+            .container {
+                width: 80%;
+                padding: 2.5rem;
+            }
+            h1 {
+                font-size: 2.25rem;
+            }
+            p {
+                font-size: 1.125rem;
+            }
+        }
+
+        /* Desktop Breakpoint (1024px) */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 800px;
+                padding: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Responsive Lorem Ipsum</h1>
+            <p style="color: #6b7280; font-style: italic;">A clean, simple layout using custom CSS Media Queries.</p>
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1.5rem 0;">
+        </header>
+
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            </p>
+            
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. 
+            </p>
+
+            <p>
+                Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+            </p>
+        </article>
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; color: #6b7280; font-size: 0.875rem;">
+        &copy; 2026 MySite. Built with Custom CSS.
+    </footer>
+
+</body>
+</html>
